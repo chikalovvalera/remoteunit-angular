@@ -1,0 +1,9 @@
+.main-container  {
+    /* position: relative; */
+    background-image: url("/assets/image/bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* display: inline-block; */
+    background-size: cover;
+    background-attachment: fixed;
+}

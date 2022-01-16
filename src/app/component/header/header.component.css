@@ -1,0 +1,41 @@
+.fixed {
+    background-color: #BA2949;
+    margin-top: 100px;
+    position: fixed;
+    width: 100px;
+    height: 150px;
+    right: 0px;
+    transition: 0.2s linear;
+}
+.notfixed {
+    text-align: center;
+    /* padding-top: 10px;
+    padding-bottom: 200px; */
+    background-color: #762D58;
+    position: static;
+    width: 100%;
+    height: 50px;
+    transition: 0.3s initial;
+    top: 0px;
+    /* top: -50px; */
+}
+.big {
+    display: block;
+    text-align: center;
+    background-color: #762D58;
+    position: sticky;
+    width: 100%;
+    height: 500px;
+    transition: 0.3s initial;
+    top: 0px;
+}
+.small{
+    text-align: center;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    transition: 0.3s initial;
+    top: 0px;
+    
+}

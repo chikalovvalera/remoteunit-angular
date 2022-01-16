@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'remoteunit'`, () => {
+  it(`should have as title 'itproger'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('remoteunit');
+    expect(app.title).toEqual('itproger');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('remoteunit app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('itproger app is running!');
   });
 });
