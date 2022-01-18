@@ -1,29 +1,35 @@
 <div>
 
-    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark" (scroll)="onscroll()">
-        
-        <div [ngClass]="maxSizeHeader ? 'nav-header-max' :'nav-header-min'">
-            <h1 *ngIf="maxSizeHeader">My very good best perfect site</h1>
-        </div>
+  <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark" (scroll)="onscroll()">
 
-        <div class="nav-menu" *ngIf=!maxSizeHeader>
-            <h1>Menu</h1>
-        </div>
-    </nav>
-    <div [ngClass]="maxSizeHeader ? 'middle-container' :'top-container'">
-        <mat-tab-group class="content" mat-align-tabs="center"
-            backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
-            <mat-tab label="Tab 1">
-                <app-contacts></app-contacts>
-            </mat-tab>
-            <mat-tab label="Tab 2">
-                <app-contacts></app-contacts>
-            </mat-tab>
-            <mat-tab label="Tab 3">
-                <app-contacts></app-contacts>
-            </mat-tab>
-        </mat-tab-group>
-    </div>
+      <div [ngClass]="maxSizeHeader ? 'nav-header-max' :'nav-header-min'">
+          <h1 *ngIf="maxSizeHeader">My very good best perfect site</h1>
 
-    
+          <mat-icon class="hidden-button" (click)="closeHeader($event)" >keyboard_arrow_up</mat-icon>
+
+
+      </div>
+
+      <div class="nav-menu" *ngIf=!maxSizeHeader>
+          <h1>Menu</h1>
+      </div>
+  </nav>
+  <div class="container-body">
+
+      <mat-tab-group [ngClass]="maxSizeHeader  ? 'top' : 'middle'" mat-align-tabs="center"
+          backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
+          <mat-tab label="Tab 1">
+              <app-contacts></app-contacts>
+          </mat-tab>
+          <mat-tab label="Tab 2">
+              <app-contacts></app-contacts>
+          </mat-tab>
+          <mat-tab label="Tab 3">
+              <app-contacts></app-contacts>
+          </mat-tab>
+      </mat-tab-group>
+  </div>
+
+
+
 </div>

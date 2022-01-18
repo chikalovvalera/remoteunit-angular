@@ -2,13 +2,34 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.mat-tab-header{
+.top .mat-tab-header{
+  z-index: 9999999;
     width: 100%;
+    background-color: blue;
+    margin-top:200px;
+    height: 20;
     position: fixed !important;
-    z-index: 2;
 }
-.mat-tab-body-wrapper{
-    position: relative !important;
-    margin-top:100px;
-    z-index:1;
+.middle .mat-tab-header{
+    z-index: 9999999;
+    width: 100%;
+    background-color: gold;
+    margin-top:20px;
+    height: 20;
+    position: fixed !important;
+}
+.top .mat-tab-body-wrapper{
+    /* position: fixed; relative !important; */
+    /* position: fixed; */
+
+    margin-top:230px;
+    /* z-index:1; */
+    /* overflow: calc(100vw-100px); */
+}
+.middle .mat-tab-body-wrapper{
+  /* position: fixed; relative !important; */
+  /* position: fixed; */
+  margin-top:100px;
+  /* z-index:1; */
+  /* overflow: calc(100vw-100px); */
 }

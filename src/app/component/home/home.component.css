@@ -1,17 +1,3 @@
-.middle-container {    
-    /* top:50%; */
-    margin-top:100px;
-}
-.top-container {    
-    /* top:50%; */
-    margin-top:20px;
-}
-
-.content {    
-    width: 100%;
-    /* position: static; */
-}
-    
 .nav-menu {
     background-color: #BA2949;
     margin-top: 100px;
@@ -21,6 +7,12 @@
     right: 0px;
     transition: 0.2s linear;
 }
+.hidden-button {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  color:white
+}
 .nav-header-max {
     color: whitesmoke;
     top: 50%;
@@ -28,12 +20,12 @@
     background-color: #762D58;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 200px;
     transition: 0.1s initial;
     top: 0px;
     z-index:99999999;
 }
-.nav-header-min {   
+.nav-header-min {
     background-color: #762D58;
     position: fixed;
     width: 100%;

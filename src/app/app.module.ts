@@ -19,6 +19,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
 
 
+
 const appRoutes : Routes = [
   {path:'', component:HomeComponent},
   {path:'contacts', component:ContactsComponent},
@@ -36,7 +37,7 @@ const appRoutes : Routes = [
     NotfoundComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserAnimationsModule,
