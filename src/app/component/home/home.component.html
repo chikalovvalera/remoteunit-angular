@@ -1,32 +1,24 @@
 <div>
 
-  <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark" (scroll)="onscroll()">
-
-      <div [ngClass]="maxSizeHeader ? 'nav-header-max' :'nav-header-min'">
-          <h1 *ngIf="maxSizeHeader">My very good best perfect site</h1>
-
-          <mat-icon class="hidden-button" (click)="closeHeader($event)" >keyboard_arrow_up</mat-icon>
-
-
-      </div>
-
-      <div class="nav-menu" *ngIf=!maxSizeHeader>
-          <h1>Menu</h1>
-      </div>
-  </nav>
-  <div class="container-body">
-
-      <mat-tab-group [ngClass]="maxSizeHeader  ? 'top' : 'middle'" mat-align-tabs="center"
-          backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
-          <mat-tab label="Tab 1">
-              <app-contacts></app-contacts>
-          </mat-tab>
-          <mat-tab label="Tab 2">
-              <app-contacts></app-contacts>
-          </mat-tab>
-          <mat-tab label="Tab 3">
-              <app-contacts></app-contacts>
-          </mat-tab>
+  <div>
+    <div style="background-color: cadetblue; height: 50px; width: 100px; position: fixed; z-index: 99;">
+        <mat-icon class="menu-btn">menu</mat-icon>
+        
+    </div>
+      <mat-tab-group class="top" mat-align-tabs="center" backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
+          <mat-tab label="Tab 1"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 2"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 3"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 4"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 5"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 6"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 7"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 8"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 9"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 10"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 11"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 12"><app-contacts></app-contacts></mat-tab>
+          <mat-tab label="Tab 13"><app-contacts></app-contacts></mat-tab>
       </mat-tab-group>
   </div>
 

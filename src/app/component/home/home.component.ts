@@ -10,7 +10,7 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-  maxSizeHeader: boolean = true;
+  
   tabindex: number;
 
   constructor() {
@@ -28,19 +28,9 @@ export class HomeComponent implements OnInit {
     // }
   }
 
-  closeHeader(e:Event){
-    this.maxSizeHeader = !this.maxSizeHeader;
-  }
 
   onTabChange(e: any) {
-    if (this.tabindex = e) {
-      console.log(e)
-      this.tabindex = e;
-      if (e == 3) {
-        return "<app-about></app-about>";
-      }
-    }
-    return "";
+    this.tabindex = e;
   }
 
 }

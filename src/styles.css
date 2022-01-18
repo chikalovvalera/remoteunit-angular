@@ -1,35 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.top .mat-tab-header{
-  z-index: 9999999;
-    width: 100%;
-    background-color: blue;
-    margin-top:200px;
-    height: 20;
-    position: fixed !important;
+html, body {
+  height: 100%;
 }
-.middle .mat-tab-header{
-    z-index: 9999999;
-    width: 100%;
-    background-color: gold;
-    margin-top:20px;
-    height: 20;
-    position: fixed !important;
-}
-.top .mat-tab-body-wrapper{
-    /* position: fixed; relative !important; */
-    /* position: fixed; */
 
-    margin-top:230px;
-    /* z-index:1; */
-    /* overflow: calc(100vw-100px); */
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-.middle .mat-tab-body-wrapper{
-  /* position: fixed; relative !important; */
-  /* position: fixed; */
-  margin-top:100px;
-  /* z-index:1; */
-  /* overflow: calc(100vw-100px); */
+
+.mat-tab-header {
+  z-index: 9999999;
+  height: 50px;
+  left: 100px;
+  width: calc(100% - 100px);
+  background-color: blue;
+  top: 0px;
+
+  position: fixed !important;
+}
+
+.mat-tab-body-wrapper {
+  margin-top: 20px;
 }
