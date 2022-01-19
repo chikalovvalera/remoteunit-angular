@@ -6,6 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
+
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
@@ -17,6 +19,10 @@ import { NotfoundComponent } from './helper/notfound/notfound.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
+import { NavpanelComponent } from './component/navpanel/navpanel.component';
+import { OutSideClickComponent } from './directive/out-side-click/out-side-click.component';
+
+
 
 
 
@@ -37,10 +43,13 @@ const appRoutes : Routes = [
     NotfoundComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    NavpanelComponent,
+    OutSideClickComponent
   ],
   imports: [
     BrowserAnimationsModule,
+    MatButtonModule,
     MatTabsModule,
     MatIconModule,
     MatListModule,

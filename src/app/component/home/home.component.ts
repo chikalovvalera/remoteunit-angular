@@ -1,5 +1,5 @@
-import { Component, OnInit, HostListener, ViewEncapsulation } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
+
 declare var $: any;
 
 @Component({
@@ -10,24 +10,20 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-  
+  isMenuOpen: boolean;
   tabindex: number;
 
   constructor() {
     this.tabindex = 0;
+    this.isMenuOpen = false;
+  }
+
+  public open(event :any) {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   ngOnInit(): void {
   }
-
-  @HostListener('window:scroll', ['$event']) onscroll() {
-    // if (window.scrollY > 10) {
-    //   this.maxSizeHeader = false;
-    // } else {
-    //   this.maxSizeHeader = true;
-    // }
-  }
-
 
   onTabChange(e: any) {
     this.tabindex = e;

@@ -1,0 +1,13 @@
+.menu-container {
+  left: 0px;
+  top: 50px;
+  width: 300px;
+  height: calc(100% / 2);
+  background-color: cadetblue;
+  z-index: 999999;
+  position: fixed;
+}
+.menu-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

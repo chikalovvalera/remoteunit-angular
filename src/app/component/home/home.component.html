@@ -1,9 +1,8 @@
 <div>
 
-  <div>
-    <div style="background-color: cadetblue; height: 50px; width: 100px; position: fixed; z-index: 99;">
-        <mat-icon class="menu-btn">menu</mat-icon>
-        
+    <div class="menu-div" (click)="open($event)">
+      <mat-icon class="menu-btn">menu</mat-icon>
+
     </div>
       <mat-tab-group class="top" mat-align-tabs="center" backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
           <mat-tab label="Tab 1"><app-contacts></app-contacts></mat-tab>
@@ -22,6 +21,8 @@
       </mat-tab-group>
   </div>
 
+  <div *ngIf=isMenuOpen>
+    <app-navpanel [isMenuOpen]="isMenuOpen"></app-navpanel>
+  </div>
 
 
-</div>
