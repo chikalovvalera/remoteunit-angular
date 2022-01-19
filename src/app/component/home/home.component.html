@@ -1,6 +1,6 @@
 <div>
 
-    <div class="menu-div" (click)="open($event)">
+    <div class="menu-div" (click)="open(false, !isMenuOpen)" >
       <mat-icon class="menu-btn">menu</mat-icon>
 
     </div>
@@ -21,8 +21,8 @@
       </mat-tab-group>
   </div>
 
-  <div *ngIf=isMenuOpen>
-    <app-navpanel [isMenuOpen]="isMenuOpen"></app-navpanel>
-  </div>
+  <!-- <div *ngIf=isMenuOpen> -->
+    <app-navpanel [isOpen]="isMenuOpen" (onClose)="open(true, $event)"></app-navpanel>
+  <!-- </div> -->
 
 

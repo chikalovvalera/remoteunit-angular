@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-navpanel',
@@ -8,9 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavpanelComponent implements OnInit {
 
   @Input()
-  isMenuOpen!:boolean;
+  isOpen!:boolean;
+
+  @Output() onClose = new EventEmitter<boolean>()
+
   @Input()
   links!:Array<string>;
+
+  close(){
+    this.isOpen = false;
+    this.onClose.emit(false);
+  }
 
   constructor() {
 

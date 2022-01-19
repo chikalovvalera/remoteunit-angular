@@ -17,6 +17,7 @@ export class OutSideClickComponent {
   @HostListener('document:mousedown', ['$event'])
   onClick(event: MouseEvent): void {
     if (!this.elementRef.nativeElement.contains(event.target)) {
+      console.log("outsideClick "+event);
       this.outsideClick.emit(event);
     }
   }

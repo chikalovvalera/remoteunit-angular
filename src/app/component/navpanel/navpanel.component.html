@@ -1,5 +1,6 @@
-<div class="menu-container" *ngIf="isMenuOpen" (outsideClick)="isMenuOpen = false" outsideClick #menu>
+<div class="menu-container" *ngIf="isOpen" (outsideClick)="close()">
   <div class="menu-content">
     <!-- <li *ngFor="let link of links; index as i; " -->
+      <h1>Test</h1>
   </div>
 </div>

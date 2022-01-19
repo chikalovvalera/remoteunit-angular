@@ -45,7 +45,7 @@ const appRoutes : Routes = [
     FooterComponent,
     HomeComponent,
     NavpanelComponent,
-    OutSideClickComponent
+    OutSideClickComponent,
   ],
   imports: [
     BrowserAnimationsModule,
