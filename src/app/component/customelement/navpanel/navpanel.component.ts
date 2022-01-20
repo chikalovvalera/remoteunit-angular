@@ -11,13 +11,14 @@ export class NavpanelComponent implements OnInit {
   isOpen!:boolean;
 
   @Output() onClose = new EventEmitter<boolean>()
+  @Output() onCloseBtn = new EventEmitter<boolean>()
 
   @Input()
   links!:Array<string>;
 
-  close(){
+  onclose(){
     this.isOpen = false;
-    this.onClose.emit(false);
+    this.onCloseBtn.emit(false);
   }
 
   constructor() {

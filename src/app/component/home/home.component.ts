@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 declare var $: any;
 
@@ -18,31 +18,13 @@ export class HomeComponent implements OnInit {
     this.isMenuOpen = false;
   }
 
-  public open(keyMenu:boolean, val:boolean) {
-    console.log("------------");
-    console.log(keyMenu ? "from Menu" : "from Btn");
-    console.log("val "+val);
-    console.log("isMenuOpen = "+this.isMenuOpen);
-
-    if (keyMenu == false) {
-      console.log("is Btn");
-      if (this.isMenuOpen == false){
-        this.isMenuOpen = true;  
-      }
-    }  else if (keyMenu == true && val == false){
-      console.log("is Menu");
-      this.isMenuOpen = false;
+  setMenuVisible(val:any){
+    if (val != null){
+      this.isMenuOpen = val;
+    } else {
+      this.isMenuOpen = !this.isMenuOpen;
     }
-    
-    
-    console.log("set:");
-    console.log("isMenuOpen = "+this.isMenuOpen);
   }
-
-  // public closeMenu(){
-  //   this.tabMenuBtn = false;
-  //   this.isMenuOpen = false;
-  // }
 
   ngOnInit(): void {
   }
