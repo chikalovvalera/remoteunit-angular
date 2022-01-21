@@ -19,11 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   setMenuVisible(val:any){
-    if (val != null){
-      this.isMenuOpen = val;
-    } else {
-      this.isMenuOpen = !this.isMenuOpen;
-    }
+    this.isMenuOpen = val != null ? val : !this.isMenuOpen;
   }
 
   ngOnInit(): void {

@@ -5,20 +5,19 @@
     <div *ngIf=!isMenuOpen class="menu-div" (click)="setMenuVisible(null)" >
       <mat-icon class="menu-btn">menu</mat-icon>
     </div>
-      <mat-tab-group class="top" mat-align-tabs="center" backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
-          <mat-tab label="Tab 1"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 2"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 3"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 4"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 5"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 6"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 7"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 8"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 9"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 10"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 11"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 12"><app-contacts></app-contacts></mat-tab>
-          <mat-tab label="Tab 13"><app-contacts></app-contacts></mat-tab>
+      <mat-tab-group mat-align-tabs="center" backgroundColor="accent" [selectedIndex]="tabindex" (selectedIndexChange)="onTabChange($event)">
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+        <mat-tab label="Servers"><app-server-area></app-server-area></mat-tab>
+
       </mat-tab-group>
 
   <app-navpanel [isOpen]="isMenuOpen" (onCloseBtn)="setMenuVisible(false)"></app-navpanel>
