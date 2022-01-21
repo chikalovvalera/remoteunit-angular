@@ -2,6 +2,13 @@
 
 html, body {
   height: 100%;
+  background-color: grey;
+  background-image: url("/assets/image/bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* display: inline-block; */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body {
@@ -14,7 +21,7 @@ body {
   height: 50px;
   left: 100px;
   width: calc(100% - 100px);
-  background-color: blue;
+  background-color: white;
   top: 0px;
 
   position: fixed !important;
@@ -22,4 +29,13 @@ body {
 
 .mat-tab-body-wrapper {
   margin-top: 20px;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: cadetblue;
 }
